@@ -55,4 +55,5 @@ app.post('/api/email', (req, res, next) => {
 });
 
 
-app.listen(3030, '0.0.0.0');
+const port = process.env.PORT || 5000;
+app.listen(port);

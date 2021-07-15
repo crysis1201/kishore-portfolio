@@ -24,7 +24,7 @@ const Contact = () => {
 
         setFormInput({loader: true})
 
-        Axios.post('http://localhost:3030/api/email', formInput)
+        Axios.post('api/email', formInput)
             .then(res => {
                 if(res.data.success) {
                     console.log('email Sent')
