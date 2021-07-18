@@ -1,18 +1,14 @@
+import PORTFOLIO_DATA from './portfolio_data';
+
 const INITIAL_STATE = {
-    porttfolio: null
-}
-
-const portfolioReducer = ({ state = INITIAL_STATE, action }) =>{
-    switch (action.types) {
-        case 'SET_PORTFOLIO' :
-            return {
-                ...state,
-                porttfolio: action.payload
-            }
-
-        default:
-            return state
-    };
+  collections: PORTFOLIO_DATA
 };
 
-export default portfolioReducer
+const shopReducer = (state = INITIAL_STATE, action) => {
+  switch (action.type) {
+    default:
+      return state;
+  }
+};
+
+export default shopReducer;

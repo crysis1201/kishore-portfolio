@@ -3,6 +3,28 @@ const PORTFOLIO_DATA = {
       id: 1,
       title: 'Flutter Apps',
       routeName: 'flutter',
+      imageUrl: 'images/appDev.png',
+      levels: [
+        {
+          percent: '85%', 
+          style: { backgroundColor: "#A69DFF", width: '85%', height: '100%', borderRadius: '20px 50px 50px 20px',},
+          title: 'Flutter Apps',
+        }
+      ],
+      barValues: [
+        {  
+          id: 1,
+          name: 'Dart',
+          percent: '70%',
+          color: 'yellow'
+        },
+        {  
+          id: 2,
+          name: 'Dart',
+          percent: '70%',
+          color: 'yellow'
+        },
+      ],
       items: [
         {
           id: 1,
@@ -28,6 +50,28 @@ const PORTFOLIO_DATA = {
       id: 2,
       title: 'Motion Graphics',
       routeName: 'motiongraphics',
+      imageUrl: 'images/motion.png',
+      levels: [
+        {
+          percent: '80%', 
+          style: { backgroundColor: "#FE5F55", width: '80%', height: '100%', borderRadius: '20px 50px 50px 20px'},
+          title: 'Motion Graphics',
+        }
+      ],
+      barValues: [
+        {  
+          id: 1,
+          name: 'Dart',
+          percent: '70%',
+          color: 'yellow'
+        },
+        {  
+          id: 1,
+          name: 'Dart',
+          percent: '70%',
+          color: 'yellow'
+        },
+      ],
       items: [
         {
           id: 10,
@@ -47,6 +91,27 @@ const PORTFOLIO_DATA = {
       id: 5,
       title: 'Video Works',
       routeName: 'videoworks',
+      levels: [
+        {
+          percent: '60%', 
+          style: { backgroundColor: "#B3D89C", width: '60%', height: '100%', borderRadius: '20px 50px 50px 20px'},
+          title: 'Video Works',
+        }
+      ],
+      barValues: [
+        {  
+          id: 1,
+          name: 'Dart',
+          percent: '70%',
+          color: 'yellow'
+        },
+        {  
+          id: 1,
+          name: 'Dart',
+          percent: '70%',
+          color: 'yellow'
+        },
+      ],
       items: [
         {
           id: 30,

@@ -37,7 +37,7 @@ const Arrow = ({location}) => {
     }
     
     return ( 
-        <div className="flex self-center absolute top-1/2 w-full max-w-screen-lg justify-between">
+        <div className="flex self-center absolute top-1/2 w-full mx-auto justify-between max-w-screen-xl">
             <div onClick={goBack} className="bg-gray-900 rounded-full cursor-pointer p-4">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" stroke="#e3e3e3" strokeWidth="2" strokeLinecap="butt" strokeLinejoin="miter" fill="#e3e3e3" className="bi bi-chevron-left" viewBox="0 0 16 16">
                     <path fillRule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>

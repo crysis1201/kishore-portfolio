@@ -7,13 +7,15 @@ import ContactPage from "./pages/ContactPage";
 
 const App = () => {
   return ( 
-    <div className="max-w-screen-lg mx-auto" >
+    <div className="mx-auto max-w-screen-xl">
       <Arrow />
-      <Switch>
-        <Route exact path="/" component={Homepage} />
-        <Route exact path='/portfolio' component={Portfolio} />
-        <Route exact path="/contactMe" component={ContactPage} />
-      </Switch>
+      <div className="max-w-screen-lg mx-auto">
+        <Switch>
+          <Route exact path="/" component={Homepage} />
+          <Route exact path='/portfolio' component={Portfolio} />
+          <Route exact path="/contactMe" component={ContactPage} />
+        </Switch>
+      </div>
     </div>
    );
 }
