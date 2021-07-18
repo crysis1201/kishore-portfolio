@@ -31,7 +31,7 @@ const Contact = () => {
                     db.collection('contacts')
                         .add({
                             firstName: firstName,
-                            lastName: "",
+                            lastName: lastName,
                             email: email,
                             message: message
                         })
@@ -82,7 +82,7 @@ const Contact = () => {
                         <label className="block uppercase tracking-wide text-xs font-bold mb-2 text-white" >
                             First Name
                         </label>
-                        <input className="appearance-none block w-full bg-grey text-gray-700border border-grey rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-focusgrey" id="grid-first-name" type="text" name="name" value={firstName} onChange={handleChange} placeholder="First Name"></input>
+                        <input className="appearance-none block w-full bg-grey text-gray-700border border-grey rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-focusgrey" id="grid-first-name" type="text" name="firstName" value={firstName} onChange={handleChange} placeholder="First Name"></input>
                         <p className="text-red-500 text-xs italic">Please fill out this field.</p>
                         </div>
                         <div className="w-full md:w-1/2 px-3">
