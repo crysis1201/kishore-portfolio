@@ -6,13 +6,12 @@ import React from "react";
 import ProgressDiv from "./progressDiv";
 
 const PortfolioOverview = ({collections}) => {
-    console.log(collections.level)
     return ( 
         <div>
            {collections.map(({ levels, id, ...otherCollectionProps }) => (
                <ProgressDiv key={id} levels={levels} />
             ))}
-            <div className="flex justify-between mt-10">
+            <div className="flex justify-around mt-10">
               {collections.map(({ id, ...otherCollectionProps }) => (
                 <PortfolioPreview key={id} {...otherCollectionProps} />
               ))}

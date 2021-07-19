@@ -7,8 +7,8 @@ import { withRouter } from "react-router-dom"
 class homepage extends React.Component {
     render() {
     return ( 
-        <div className="h-screen py-4" style={{backgroundImage: `url(${photo})`, backgroundRepeat: "no-repeat", backgroundSize: "cover"}}>
-            <Header />
+         //style={{backgroundImage: `url(${photo})`, backgroundRepeat: "no-repeat", backgroundSize: "630px"}}>
+        <div className="h-screen py-4">
             <IntroCard />
             <p className="text-white"> HI {this.props.location.pathname} </p>
         </div>

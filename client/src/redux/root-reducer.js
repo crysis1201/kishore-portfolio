@@ -1,8 +1,10 @@
 import { combineReducers } from 'redux'
+import menuReducer from './menu/menu.reducer'
 import portfolioReducer from './portfolio/portfolio.reducer'
 
 const rootReducer = combineReducers({
-    portfolio: portfolioReducer
+    portfolio: portfolioReducer,
+    menu: menuReducer
 
 })
 
