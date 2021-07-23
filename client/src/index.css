@@ -1,3 +1,9 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 #root {
   margin: 0;
   font-family: 'Nunito', sans-serif;
@@ -15,4 +21,50 @@ body {
 
 #header-logo {
   font-family:'Eutemia'
+}
+
+.animated {
+  animation: ease-in-out;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  display: hidden;
+}
+
+.animated.faster {
+  -webkit-animation-duration: 500ms;
+  animation-duration: 500ms;
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+.fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform : translate(-400px);
+  }
+
+  to {
+    opacity: 1;
+    transform : translate(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    transform : translate(0);
+  }
+
+  to {
+    transform : translate(-200px);
+  }
 }

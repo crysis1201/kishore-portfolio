@@ -23,7 +23,9 @@
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "framer-motion": "^4.1.17",
     "nodemon": "^1.19.4",
+    "react-player": "^2.9.0",
     "redux-logger": "^3.0.6",
     "reselect": "^4.0.0",
     "sass": "^1.35.2"
