@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { selectCollection } from "../redux/portfolio/portfolio.selectors";
+import { selectPortfolioContent } from "../redux/portfolio/portfolio.selectors";
 import PortfolioContent from "../components/portfolio-content/portfolioContent"
 
 const PortfolioContentPage = ({collection}) => {
@@ -12,7 +12,7 @@ const PortfolioContentPage = ({collection}) => {
 };
 
 const mapStateToProps = (state, ownProps) => ({
-  collection: selectCollection(ownProps.match.params.collectionId)(state)
+  collection: selectPortfolioContent(ownProps.match.params.collectionId)(state)
 });
 
 export default connect(mapStateToProps)(PortfolioContentPage);

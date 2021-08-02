@@ -5,7 +5,7 @@ import IntroCard from "../components/header/introcard"
 const homepage = () => {
     return ( 
          //style={{backgroundImage: `url(${photo})`, backgroundRepeat: "no-repeat", backgroundSize: "630px"}}>
-        <div className="h-screen py-4">
+        <div className="py-4">
             <IntroCard />
         </div>
      );

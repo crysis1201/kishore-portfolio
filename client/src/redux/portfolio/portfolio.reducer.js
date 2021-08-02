@@ -1,14 +1,19 @@
-import PORTFOLIO_DATA from './portfolio_data';
+import PortfolioTypes from './portfolio.types';
 
 const INITIAL_STATE = {
-  collections: PORTFOLIO_DATA
+  portfolioContent: null,
 };
 
 const shopReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
-    default:
-      return state;
-  }
+    case PortfolioTypes.UPDATE_PORTFOLIO_DATA:
+      return {
+      ...state,
+      portfolioContent: action.payload
+      }
+      default:
+        return state
+    }
 };
 
 export default shopReducer;

@@ -1,5 +1,4 @@
 import React from "react";
-import Arrow from "./components/arrow/arrow";
 import Homepage from "./pages/homepage"
 import { Route, Switch } from "react-router-dom";
 import Portfolio from "./pages/portfolio";

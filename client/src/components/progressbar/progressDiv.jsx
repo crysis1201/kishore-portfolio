@@ -5,11 +5,11 @@ const progressDiv  = ({levels}) => {
         <div className="mt-10">
             {levels
                 .map(levels => (
-                <div key={levels.title}>
+                <div className="mt-6" key={levels.title}>
                     <div className="w-full rounded-sm max-w-xl h-4 overflow-hidden bg-gray-800">
                         <div data-aos="slide-right" className="load" style={levels.style}></div>
                     </div>
-                    <div className="flex gap-24 text-xl pt-6 ">
+                    <div className="flex gap-24 text-xl pt-2">
                         <p>
                             {levels.percent }
                         </p>

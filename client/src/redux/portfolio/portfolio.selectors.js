@@ -1,19 +1,19 @@
 import { createSelector } from 'reselect';
 
-const selectShop = portfolio => portfolio.portfolio;
+const selectPortfolioData = portfolio => portfolio.portfolio;
 
-export const selectCollections = createSelector(
-  [selectShop],
-  portfolio => portfolio.collections
+export const selectPortfolioContents = createSelector(
+  [selectPortfolioData],
+  portfolio => portfolio.portfolioContent
 );
 
-export const selectCollectionsForPreview = createSelector(
-  [selectCollections],
-  collections => Object.keys(collections).map(key => collections[key])
+export const selectPortfolioDataForPreview = createSelector(
+  [selectPortfolioContents],
+  collections => collections ? Object.keys(collections).map(key => collections[key]) : []
 );
 
-export const selectCollection = collectionUrlParam =>
+export const selectPortfolioContent = collectionUrlParam =>
   createSelector(
-    [selectCollections],
-    collections => collections[collectionUrlParam]
-  );
+    [selectPortfolioContents],
+    collections => (collections ? collections[collectionUrlParam] : null)
+);

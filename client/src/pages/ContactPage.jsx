@@ -2,7 +2,6 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import MailIcon from '@material-ui/icons/Mail';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import GitHubIcon from '@material-ui/icons/GitHub';
-import profile from "../components/photo.jpg"
 import { db } from "../components/firebase"
 import React, { useState } from "react";
 import Axios from "axios";
@@ -114,9 +113,6 @@ const Contact = () => {
                 </form>
             </div>
             <div className="">
-                <div className="w-52 shadow-lg h-52 mt-10 overflow-hidden rounded-full mx-auto ">
-                    <img src={profile} alt="" />
-                </div>
                 <div className="text-white max-w-sm mt-10 mx-auto flex justify-around items-center" >
                     <InstagramIcon  fontSize="large"></InstagramIcon>
                     <TwitterIcon  fontSize="large"></TwitterIcon>

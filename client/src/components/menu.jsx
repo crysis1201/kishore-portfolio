@@ -4,6 +4,7 @@ import { selectMenuOpen } from "../redux/menu/menu.selector";
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 import { toggleMenuOpen } from "../redux/menu/menu.actions";
+import "./animation.css"
 
 const Menu = ({location, menuOpen, toggleMenuOpen}) => {
 
