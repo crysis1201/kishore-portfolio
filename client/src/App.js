@@ -5,6 +5,7 @@ import Portfolio from "./pages/portfolio";
 import ContactPage from "./pages/ContactPage";
 import  Menu  from "./components/menu";
 import Header from "./components/header/header";
+import About from "./pages/about";
 
 const App = () => {
   return ( 
@@ -16,6 +17,7 @@ const App = () => {
           <Route exact path="/" component={Homepage} />
           <Route path='/portfolio' component={Portfolio} />
           <Route exact path="/contactMe" component={ContactPage} />
+          <Route exact path="/about" component={About} />
         </Switch>
       </div>
     </div>
